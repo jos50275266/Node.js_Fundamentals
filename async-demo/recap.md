@@ -3,7 +3,7 @@
 1. Callback-Based-Approach
 - callback hell
 
-```
+```javascript
 console.log('Before');
 
 getUser(1, (user) => {
@@ -53,7 +53,8 @@ console.log('After');
 - resolve/reject --> then/catch
 - Promise.All: A, B, C, 가 순서대로 비동기 방식으로 실행되어도 셋 중 먼저 event loop를 타고 callstack에서 실행된 순서대로 배열에 담김, 단 셋 중 한 곳에서 에러가 발생하면 올 스탑.
 - Promise.race: 두 개의 비동기가 실행되었을때 먼저 완료된 결과만 출력
-```
+
+```javascript
 console.log('Before');
 
 getUser(1)
@@ -99,7 +100,7 @@ console.log('After');
 - instead of resolve/reject, use try/catch
 - async는 함수는 promise를 return 값으로 가진다는 것을 의미한다.
 
-```
+```javascript
 async function displayCommits() {
     try {
         const user = await getUser(1);
