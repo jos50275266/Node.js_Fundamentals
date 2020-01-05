@@ -17,6 +17,7 @@ mongoose
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }))
+app.use(morgan('tiny'));
 app.use('/api/genres', genres);
 app.use('/api/customers', customers);
 
@@ -25,3 +26,5 @@ const port = process.env.PORT || 4000;
 app.listen(port, () => {
   console.log(`Listening to port ${port}`);
 });
+
+// https://stackoverflow.com/questions/54081114/what-is-the-difference-between-findbyidandremove-and-findbyidanddelete-in-mongoo
