@@ -1,4 +1,5 @@
 const _ = require('lodash')
+const bcrypt = require('bcryptjs')
 const { User, validateUser } = require("../models/user")
 const mongoose = require('mongoose')
 const express = require('express');
@@ -20,6 +21,10 @@ router.post('/', async (req, res, next) => {
 
     // 위 코드와 동일
     user = new User(_.pick(req.body, ['name', 'email', 'password']));
+
+    // Hashing Password
+    const salt = await bcrypt.genSalt(10);
+    user.password = await bcrypt.hash(user.password, salt)
     await user.save();
 
     // 문제점 1: user에게 비밀번호를 send 해주면 안됨.
