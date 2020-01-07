@@ -32,6 +32,7 @@ router.post('/', async (req, res, next) => {
     // 두번째 해결법, Lodash 사용
     // second property 배열에 원하는 property 이름만
     // _.pick(user, ['name', 'email'])
+    // joi-password-complexity
 
     res.send(_.pick(user, ['_id', 'name', 'email']));
 })
