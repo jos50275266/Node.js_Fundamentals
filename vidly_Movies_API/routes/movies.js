@@ -16,7 +16,8 @@ router.post('/', async (req, res, next) => {
     const genre = await Genre.findById(req.body.genreId);
     if (!genre) return res.status(400).send('Invalid Genre...')
 
-    let movie = await new Movie({
+    // 이미 Drive 단에서 _id 값을 할당한다
+    const movie = await new Movie({
         title: req.body.title,
         // genre: genre,
         // timestampe 등 모두 저장할 필요 없이 필요한 것만 selectively 저장할려고
@@ -28,7 +29,8 @@ router.post('/', async (req, res, next) => {
         dailyRentalRate: req.body.dailyRentalRate
     })
 
-    movie = await movie.save();
+    await movie.save();
+
     res.send(movie)
 });
 
