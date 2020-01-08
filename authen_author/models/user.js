@@ -28,8 +28,7 @@ const userSchema = new mongoose.Schema({
 // Arror Function은 this가 없기 때문에 여기 사용불가
 userSchema.methods.generateAuthToken = function () {
     const token = jwt.sign({ _id: this._id }, config.get('jwtPrivateKey'));
-
-    return token
+    return token;
 }
 
 const User = mongoose.model('User', userSchema)

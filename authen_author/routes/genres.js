@@ -1,3 +1,4 @@
+const { auth } = require('../middleware/auth');
 const { Genre, validateGenres } = require("../models/genre")
 const express = require("express");
 const router = express.Router();
@@ -7,7 +8,13 @@ router.get("/", async (req, res, next) => {
     res.send(genres);
 });
 
-router.post("/", async (req, res, next) => {
+router.post("/", auth, async (req, res, next) => {
+
+    // request header를 읽는다 - 이 부분을 매번 반복하면 좋은 코드가 아니기 때문에 함수로
+    // 만들어서 middleware로 만들어보자
+    // const token = req.header('x-auth-token');
+    // res.status(401); // Client doesn't have credential to access the info
+
     const { error } = await validateGenres(req.body);
     if (error) return res.status(400).send(error.details[0].message);
 
