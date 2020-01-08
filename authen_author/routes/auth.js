@@ -1,3 +1,4 @@
+const config = require('config');
 const jwt = require('jsonwebtoken');
 const Joi = require("@hapi/joi")
 const { User, validateUser } = require("../models/user")
@@ -27,7 +28,8 @@ router.post('/', async (req, res, next) => {
     // 가 필요한데 이것은 서버만 알고있기 때문에 해킹이 불가능하다.
     // res.send(true);
 
-    const token = jwt.sign({ _id: user._id }, 'jwtPrivateKey'); // (payload, secret or private key)
+    const token = jwt.sign({ _id: user._id }, config.get('jwtPrivateKey')); // (payload, secret or private key)
+
     res.send(token);
 })
 

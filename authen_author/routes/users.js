@@ -1,3 +1,5 @@
+const jwt = require('jsonwebtoken');
+const config = require('config');
 const _ = require('lodash')
 const bcrypt = require('bcryptjs')
 const { User, validateUser } = require("../models/user")
@@ -39,7 +41,9 @@ router.post('/', async (req, res, next) => {
     // _.pick(user, ['name', 'email'])
     // joi-password-complexity
 
-    res.send(_.pick(user, ['_id', 'name', 'email']));
+    // Header는 request/response object 둘 다에 있다.
+    const token = jwt.sign({ _id: user._id }, config.get('jwtPrivateKey'));
+    res.header('x-auth-token', token).send(_.pick(user, ['_id', 'name', 'email']));
 })
 
 module.exports = router

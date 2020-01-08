@@ -1,0 +1,1 @@
+default.json: Just Define all the sample's template 

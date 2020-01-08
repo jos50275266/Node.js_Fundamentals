@@ -1,9 +1,19 @@
+const config = require('config');
 const Joi = require('@hapi/joi');
 Joi.objectId = require('joi-objectid')(Joi);
 const morgan = require('morgan');
 const mongoose = require('mongoose')
 const express = require('express');
 const app = express();
+
+// Environment Variable이 설정됬는지 확인하기
+// export vidly_jwtPrivateKey=mySecureKey
+if (!config.get('jwtPrivateKey')) {
+    console.error('Fatal Error: jwtPrivateKey is not defined');
+    process.exit(1);
+    // 0: success
+    // 1: fail
+}
 
 // router
 const users = require('./routes/users');
