@@ -28,10 +28,13 @@ router.post('/', async (req, res, next) => {
     // 가 필요한데 이것은 서버만 알고있기 때문에 해킹이 불가능하다.
     // res.send(true);
 
-    const token = jwt.sign({ _id: user._id }, config.get('jwtPrivateKey')); // (payload, secret or private key)
+    const token = user.generateAuthToken();
+    // const token = jwt.sign({ _id: user._id }, config.get('jwtPrivateKey')); // (payload, secret or private key)
 
     res.send(token);
 })
+
+// Information Expert Principle
 
 async function validateAuth(req) {
     const schema = {

@@ -1,7 +1,9 @@
+const config = require('config');
+const jwt = require('jsonwebtoken');
 const Joi = require('@hapi/joi');
 const mongoose = require('mongoose');
 
-const User = mongoose.model('User', new mongoose.Schema({
+const userSchema = new mongoose.Schema({
     name: {
         type: String,
         minlength: 5,
@@ -21,7 +23,16 @@ const User = mongoose.model('User', new mongoose.Schema({
         maxlength: 255,
         required: true
     }
-}))
+})
+
+// Arror Function은 this가 없기 때문에 여기 사용불가
+userSchema.methods.generateAuthToken = function () {
+    const token = jwt.sign({ _id: this._id }, config.get('jwtPrivateKey'));
+
+    return token
+}
+
+const User = mongoose.model('User', userSchema)
 
 async function validateUser(user) {
     const schema = Joi.object({

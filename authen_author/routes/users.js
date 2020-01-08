@@ -42,7 +42,9 @@ router.post('/', async (req, res, next) => {
     // joi-password-complexity
 
     // Header는 request/response object 둘 다에 있다.
-    const token = jwt.sign({ _id: user._id }, config.get('jwtPrivateKey'));
+    // Encapsulating This Logic, check out: Information Expert Principle in OOP
+    // const token = jwt.sign({ _id: user._id }, config.get('jwtPrivateKey'));
+    const token = user.generateAuthToken();
     res.header('x-auth-token', token).send(_.pick(user, ['_id', 'name', 'email']));
 })
 
