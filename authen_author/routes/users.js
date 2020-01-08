@@ -1,3 +1,4 @@
+const { auth } = require("../middleware/auth")
 const jwt = require('jsonwebtoken');
 const config = require('config');
 const _ = require('lodash')
@@ -6,6 +7,14 @@ const { User, validateUser } = require("../models/user")
 const mongoose = require('mongoose')
 const express = require('express');
 const router = express.Router();
+
+// /:id 는 안전하지 않기 때문에, JWT에서 :id를 얻는 방식이 더 안전함
+// Getting the Current User
+router.get('/me', auth, async (req, res, next) => {
+    // exclude password property
+    const user = await User.findById(req.user._id).select('-password');
+    res.send(user);
+})
 
 router.post('/', async (req, res, next) => {
     const { error } = await validateUser(req.body);

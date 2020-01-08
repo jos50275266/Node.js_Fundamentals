@@ -22,12 +22,16 @@ const userSchema = new mongoose.Schema({
         minlength: 5,
         maxlength: 255,
         required: true
-    }
+    },
+    isAdmin: Boolean
+    // roles: [],
+    // operations: []
 })
 
 // Arror Function은 this가 없기 때문에 여기 사용불가
+// Role-Based Authorization
 userSchema.methods.generateAuthToken = function () {
-    const token = jwt.sign({ _id: this._id }, config.get('jwtPrivateKey'));
+    const token = jwt.sign({ _id: this._id, isAdmin: this.isAdmin }, config.get('jwtPrivateKey'));
     return token;
 }
 
@@ -35,7 +39,7 @@ const User = mongoose.model('User', userSchema)
 
 async function validateUser(user) {
     const schema = Joi.object({
-        name: Joi.string().min(5).max(50).required(),
+        namWe: Joi.string().min(5).max(50).required(),
         email: Joi.string().min(5).max(255).required().email(),
         password: Joi.string().min(5).max(50).required()
     })
