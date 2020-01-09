@@ -1,8 +1,8 @@
-const winston = require('winston');
+const { logger } = require('../helper/logger')
 
 module.exports = function (err, req, res, next) {
     // Log the exception - winston
-    winston.log('error', err.message);
+    logger.error(err.message);
     // winston.error(err.message, err); // We can store metadata (second parameter)
     // error
     // warn
