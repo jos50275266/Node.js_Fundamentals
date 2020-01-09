@@ -22,3 +22,6 @@ module.exports = function (handler) {
         }
     }
 }
+
+// asyncMiddleware를 잘 구현했지만, 문제는 우리가 항상 router를 생성할 때 마다
+// 이 middleware를 붙여주는 것을 기억해야하는 것 이다. 대신에, 모든 곳에 적용되게 만들어보자.
