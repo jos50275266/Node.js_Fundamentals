@@ -1,4 +1,4 @@
-const asyncMiddleware = require('../middleware/async');
+// const asyncMiddleware = require('../middleware/async');
 const auth = require('../middleware/auth');
 const admin = require('../middleware/admin');
 const { Genre, validate } = require('../models/genre');
@@ -27,32 +27,49 @@ const router = express.Router();
 
 // })
 
-router.get('/', asyncMiddleware(async (req, res) => {
+
+// router.get('/', asyncMiddleware(async (req, res) => {
+//   const genres = await Genre.find().sort('name');
+//   res.send(genres)
+
+
+// Removing Try Catch Blocks
+// // Handling Rejected Promises
+// try {
+//   const genres = await Genre.find().sort('name');
+//   res.send(genres);
+// }
+
+// catch (ex) {
+//   // index.js의 Express Error Middleware로
+//   // 중간에 DB가 종료되는 상황
+//   // Proper Response
+//   // 500: Interner Server Error
+//   // Log the exception
+//   // res.status(500).send('Someting Failed.');
+//   next(ex);
+//   // 여기서 보내준 exception을 index.js의 Express Error Middleware의 첫번째 err 인자에서 받는다.
+// }
+
+// }));
+
+// router.post('/', auth, asyncMiddleware(async (req, res) => {
+//   const { error } = validate(req.body);
+//   if (error) return res.status(400).send(error.details[0].message);
+
+//   let genre = new Genre({ name: req.body.name });
+//   genre = await genre.save();
+
+//   res.send(genre);
+// }));
+
+// 위 방식 대신에
+router.get('/', async (req, res) => {
   const genres = await Genre.find().sort('name');
-  res.send(genres)
+  res.send(genres);
+})
 
-
-  // Removing Try Catch Blocks
-  // // Handling Rejected Promises
-  // try {
-  //   const genres = await Genre.find().sort('name');
-  //   res.send(genres);
-  // }
-
-  // catch (ex) {
-  //   // index.js의 Express Error Middleware로
-  //   // 중간에 DB가 종료되는 상황
-  //   // Proper Response
-  //   // 500: Interner Server Error
-  //   // Log the exception
-  //   // res.status(500).send('Someting Failed.');
-  //   next(ex);
-  //   // 여기서 보내준 exception을 index.js의 Express Error Middleware의 첫번째 err 인자에서 받는다.
-  // }
-
-}));
-
-router.post('/', auth, asyncMiddleware(async (req, res) => {
+router.post('/', auth, async (req, res) => {
   const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
@@ -60,7 +77,10 @@ router.post('/', auth, asyncMiddleware(async (req, res) => {
   genre = await genre.save();
 
   res.send(genre);
-}));
+});
+
+
+
 
 router.put('/:id', async (req, res) => {
   const { error } = validate(req.body);
