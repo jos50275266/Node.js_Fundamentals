@@ -3,7 +3,12 @@ const logger = winston.createLogger({
     format: winston.format.json(),
     transports: [
         new winston.transports.Console(
-            { handleExceptions: true }
+            {
+                handleExceptions: true,
+                colorize: true,
+                prettyPrint: true
+
+            }
         ),
         new winston.transports.File({ filename: 'error.log', level: 'error' }),
         new winston.transports.File({ filename: 'combined.log' })
