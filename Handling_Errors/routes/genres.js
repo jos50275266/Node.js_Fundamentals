@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
 
-router.get('/', async (req, res) => {
+router.get('/', async (req, res, next) => {
 
   // Handling Rejected Promises
   try {
@@ -14,11 +14,14 @@ router.get('/', async (req, res) => {
   }
 
   catch (ex) {
+    // index.js의 Express Error Middleware로
     // 중간에 DB가 종료되는 상황
     // Proper Response
     // 500: Interner Server Error
     // Log the exception
-    res.status(500).send('Someting Failed.');
+    // res.status(500).send('Someting Failed.');
+    next(ex);
+    // 여기서 보내준 exception을 index.js의 Express Error Middleware의 첫번째 err 인자에서 받는다.
   }
 
 });

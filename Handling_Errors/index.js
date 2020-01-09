@@ -1,3 +1,4 @@
+const error = require('./middleware/error');
 const config = require('config');
 const Joi = require('joi');
 Joi.objectId = require('joi-objectid')(Joi);
@@ -31,6 +32,19 @@ app.use('/api/movies', movies);
 app.use('/api/rentals', rentals);
 app.use('/api/users', users);
 app.use('/api/auth', auth);
+
+// 모든 존재하는 middleware 이후에 express error middleware를 사용할 수 있다
+// Encapsulation을 위해 별도의 middleware로 만들기
+// app.use(function (err, req, res, next) {
+//   // 중간에 DB가 종료되는 상황
+//   // Proper Response
+//   // 500: Interner Server Error
+//   // Log the exception
+//   res.status(500).send('Someting Failed.');
+// })
+
+// Not calling, just reference this middleware function
+app.use(error);
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Listening on port ${port}...`));
