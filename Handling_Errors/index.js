@@ -16,7 +16,11 @@ if (!config.get('jwtPrivateKey')) {
   process.exit(1);
 }
 
-mongoose.connect('mongodb://localhost/vidly')
+mongoose.connect('mongodb://localhost/vidly', {
+  useCreateIndex: true,
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
   .then(() => console.log('Connected to MongoDB...'))
   .catch(err => console.error('Could not connect to MongoDB...'));
 
