@@ -46,3 +46,5 @@ async function validateAuth(req) {
 }
 
 module.exports = router
+
+// 우리 서버 어느 곳에도 이 jwt token을 저장하지 않기 때문에 별도의 logout logic은 필요가없다.
