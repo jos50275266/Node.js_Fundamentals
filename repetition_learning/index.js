@@ -19,6 +19,21 @@ const auth = require('./routes/auth')
 
 dotenv.config()
 
+if (!process.env.jwtPrivateKey) {
+    console.error('FATAL ERROR: jwtPrivateKey is not defined..');
+    process.exit(1)
+}
+
+const options = {
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useNewUrlParser: true
+}
+
+mongoose.connect(process.env.mongodb_URL, options)
+    .then(() => console.log(`Connected to MongoDB... ${process.env.mongodb_URL}`))
+    .catch((err) => console.error('Could not connect to MongoDB...'));
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(logger('tiny'));
@@ -33,15 +48,6 @@ app.use('/api/rentals', rentals);
 app.use('/api/auth', auth)
 
 app.use(error);
-const options = {
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-    useNewUrlParser: true
-}
-
-mongoose.connect(process.env.mongodb_URL, options)
-    .then(() => console.log(`Connected to MongoDB... ${process.env.mongodb_URL}`))
-    .catch((err) => console.error('Could not connect to MongoDB...'));
 
 
 const port = process.env.PORT || 3000;
