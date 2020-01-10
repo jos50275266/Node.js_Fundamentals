@@ -22,5 +22,22 @@ test('absolute - show return 0 if input is 0 ', () => {
     expect(result).toBe(0);
 })
 
-// Grouping Tests
+// Grouping Tests - Tests are first-class citizens in your source code
+// the "test" method will be replaced by the method name "it"
+describe('absolute', () => {
+    it('show return a positive number if input is positive ', () => {
+        const result = lib.absolute(1);
+        expect(result).toBe(1); // toBeCloseTo
+    })
+
+    it('show return a positive number if input is negative ', () => {
+        const result = lib.absolute(-1);
+        expect(result).toBe(1);
+    })
+
+    it('show return 0 if input is 0 ', () => {
+        const result = lib.absolute(0);
+        expect(result).toBe(0);
+    })
+});
 
