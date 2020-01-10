@@ -1,3 +1,5 @@
+const Joi = require('@hapi/joi');
+Joi.objectId = require('joi-objectid')(Joi);
 const logger = require('morgan');
 const helmet = require('helmet');
 const mongoose = require('mongoose');
