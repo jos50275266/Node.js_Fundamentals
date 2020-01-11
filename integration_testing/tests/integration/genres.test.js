@@ -80,5 +80,29 @@ describe('/api/genres', () => {
             expect(res.status).toBe(400);
             // 이 테스트를 통해 validateGenre 에서 max(50)을 빼먹었음을 알 수 있다.
         })
+
+        it('should save the genre if it is valid', async () => {
+            const token = new User().generateAuthToken();
+
+            const res = await request(server)
+                .post('/api/genres')
+                .set('x-auth-token', token)
+                .send({ name: 'genre1' });
+
+            const genre = await Genre.find({ name: 'genre1' })
+            expect(genre).not.toBeNull();
+        })
+
+        it('should return genre if it is valid', async () => {
+            const token = new User().generateAuthToken();
+
+            const res = await request(server)
+                .post('/api/genres')
+                .set('x-auth-token', token)
+                .send({ name: 'genre1' });
+
+            expect(res.body).toHaveProperty('_id');
+            expect(res.body).toHaveProperty('name', 'genre1');
+        })
     });
 });
