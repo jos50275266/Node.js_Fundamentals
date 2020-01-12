@@ -2,17 +2,20 @@ const request = require('supertest');
 const { User } = require('../../models/user');
 const { Genre } = require('../../models/genre');
 const mongoose = require('mongoose')
+const dotenv = require('dotenv');
+dotenv.config();
 
 let server;
 
 describe('/api/genres', () => {
 
+
     // like trigger call this function before each test
     beforeEach(() => { server = require('../../index'); })
     afterEach(async () => {
-        server.close();
         // 매번 test 할 때 마다 추가됨으로 항상 마지막에 제거 코드 추가
-        await Genre.remove({})
+        await server.close();
+        await Genre.deleteMany({})
     });
 
     describe('GET /', () => {
