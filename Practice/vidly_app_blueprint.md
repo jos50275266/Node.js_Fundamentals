@@ -44,3 +44,6 @@ routes:
 
 - auth
     - POST /api/auth
+
+
+- req.user = decoded 때문에 middleware 순서는 auth --> admin

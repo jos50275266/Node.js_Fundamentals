@@ -1,0 +1,472 @@
+2020-01-13T16:48:56.084Z [CustomLogger] error: uncaughtException: outer is not defined
+ReferenceError: outer is not defined
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\routes\genres.js:4:1)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\startup\routes.js:3:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-01-13T16:49:27.209Z [CustomLogger] error: uncaughtException: router is not defined
+ReferenceError: router is not defined
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\routes\genres.js:4:1)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\startup\routes.js:3:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-01-13T16:49:38.219Z [CustomLogger] error: uncaughtException: auth is not defined
+ReferenceError: auth is not defined
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\routes\genres.js:9:18)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\startup\routes.js:3:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-01-13T16:49:54.708Z [CustomLogger] error: uncaughtException: auth is not defined
+ReferenceError: auth is not defined
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\routes\genres.js:9:18)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\startup\routes.js:3:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-01-13T16:50:11.344Z [CustomLogger] error: uncaughtException: auth is not defined
+ReferenceError: auth is not defined
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\routes\genres.js:9:18)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\startup\routes.js:3:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-01-13T16:50:26.446Z [CustomLogger] error: uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\express\lib\router\route.js:202:15)
+    at Function.proto.<computed> [as post] (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\express\lib\router\index.js:510:19)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\routes\genres.js:10:8)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\startup\routes.js:3:16)
+2020-01-13T16:50:29.157Z [CustomLogger] error: uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\express\lib\router\route.js:202:15)
+    at Function.proto.<computed> [as post] (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\express\lib\router\index.js:510:19)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\routes\genres.js:10:8)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\startup\routes.js:3:16)
+2020-01-13T16:50:38.508Z [CustomLogger] error: uncaughtException: validateObjectId is not defined
+ReferenceError: validateObjectId is not defined
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\routes\genres.js:20:27)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\startup\routes.js:3:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-01-13T16:50:43.140Z [CustomLogger] error: uncaughtException: Missing initializer in const declaration
+C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\routes\genres.js:2
+const vali
+      ^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\startup\routes.js:3:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-01-13T16:50:47.287Z [CustomLogger] error: uncaughtException: Cannot find module '../middleware/'
+Require stack:
+- C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\routes\genres.js
+- C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\startup\routes.js
+- C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\index.js
+Error: Cannot find module '../middleware/'
+Require stack:
+- C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\routes\genres.js
+- C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\startup\routes.js
+- C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:690:27)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\routes\genres.js:2:26)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-01-13T16:50:50.857Z [CustomLogger] error: uncaughtException: c is not defined
+ReferenceError: c is not defined
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\routes\genres.js:3:1)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\startup\routes.js:3:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\index.js:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-01-13T16:50:54.108Z [CustomLogger] error: uncaughtException: cont is not defined
+ReferenceError: cont is not defined
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\routes\genres.js:3:1)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\startup\routes.js:3:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\index.js:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-01-13T16:50:57.293Z [CustomLogger] error: uncaughtException: admin is not defined
+ReferenceError: admin is not defined
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\routes\genres.js:31:30)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\startup\routes.js:3:16)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\index.js:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-01-13T16:51:09.012Z [CustomLogger] error: uncaughtException: Unexpected token ';'
+C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\models\genre.js:17
+        name: Joi.string().min(5).max(255).required();
+                                                     ^
+
+SyntaxError: Unexpected token ';'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\models\movie.js:3:25)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\routes\movies.js:1:34)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-01-13T16:51:20.371Z [CustomLogger] error: uncaughtException: Unexpected token ';'
+C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\models\genre.js:17
+        name: Joi.string().min(5).max(255).required();
+                                                     ^
+
+SyntaxError: Unexpected token ';'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\models\movie.js:3:25)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\routes\movies.js:1:34)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-01-13T16:51:24.786Z [CustomLogger] error: uncaughtException: Invalid value for schema path `genre.type`, got value "undefined"
+TypeError: Invalid value for schema path `genre.type`, got value "undefined"
+    at Schema.add (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\mongoose\lib\schema.js:468:13)
+    at Schema.add (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\mongoose\lib\schema.js:502:12)
+    at new Schema (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\mongoose\lib\schema.js:130:10)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\models\movie.js:5:39)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\routes\movies.js:1:34)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-01-13T16:52:48.928Z [CustomLogger] error: uncaughtException: app.morgan is not a function
+TypeError: app.morgan is not a function
+    at module.exports (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\startup\routes.js:17:9)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\index.js:8:28)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)
+    at internal/main/run_main_module.js:17:11
+2020-01-13T16:52:52.923Z [CustomLogger] error: uncaughtException: app.morgan is not a function
+TypeError: app.morgan is not a function
+    at module.exports (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\startup\routes.js:17:9)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\index.js:8:28)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)
+    at internal/main/run_main_module.js:17:11
+2020-01-13T16:52:54.448Z [CustomLogger] error: uncaughtException: app.morgan is not a function
+TypeError: app.morgan is not a function
+    at module.exports (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\startup\routes.js:17:9)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\index.js:8:28)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)
+    at internal/main/run_main_module.js:17:11
+2020-01-13T16:52:56.224Z [CustomLogger] error: uncaughtException: app.morgan is not a function
+TypeError: app.morgan is not a function
+    at module.exports (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\startup\routes.js:17:9)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\index.js:8:28)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)
+    at internal/main/run_main_module.js:17:11
+2020-01-13T16:53:15.099Z [CustomLogger] error: uncaughtException: missing ) after argument list
+C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\startup\routes.js:17
+    app.use(morgan('combined', { stream });
+                                         ^
+
+SyntaxError: missing ) after argument list
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\index.js:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-01-13T16:53:17.725Z [CustomLogger] error: uncaughtException: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at new MongooseError (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\mongoose\lib\error\mongooseError.js:10:11)
+    at NativeConnection.Connection.openUri (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\mongoose\lib\connection.js:543:11)
+    at Mongoose.connect (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\mongoose\lib\index.js:332:15)
+    at module.exports (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\startup\db.js:11:14)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\index.js:9:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)
+    at internal/main/run_main_module.js:17:11
+2020-01-13T16:53:44.801Z [CustomLogger] error: uncaughtException: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at new MongooseError (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\mongoose\lib\error\mongooseError.js:10:11)
+    at NativeConnection.Connection.openUri (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\mongoose\lib\connection.js:543:11)
+    at Mongoose.connect (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\mongoose\lib\index.js:332:15)
+    at module.exports (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\startup\db.js:11:14)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\index.js:9:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)
+    at internal/main/run_main_module.js:17:11
+2020-01-13T16:53:47.926Z [CustomLogger] error: uncaughtException: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at new MongooseError (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\mongoose\lib\error\mongooseError.js:10:11)
+    at NativeConnection.Connection.openUri (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\mongoose\lib\connection.js:543:11)
+    at Mongoose.connect (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\mongoose\lib\index.js:332:15)
+    at module.exports (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\startup\db.js:11:14)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\index.js:9:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)
+    at internal/main/run_main_module.js:17:11
+2020-01-13T16:54:26.720Z [CustomLogger] error: uncaughtException: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at new MongooseError (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\mongoose\lib\error\mongooseError.js:10:11)
+    at NativeConnection.Connection.openUri (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\mongoose\lib\connection.js:543:11)
+    at Mongoose.connect (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\mongoose\lib\index.js:332:15)
+    at module.exports (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\startup\db.js:11:14)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\index.js:9:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)
+    at internal/main/run_main_module.js:17:11
+2020-01-13T16:54:55.501Z [CustomLogger] error: uncaughtException: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at new MongooseError (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\mongoose\lib\error\mongooseError.js:10:11)
+    at NativeConnection.Connection.openUri (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\mongoose\lib\connection.js:543:11)
+    at Mongoose.connect (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\mongoose\lib\index.js:332:15)
+    at module.exports (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\startup\db.js:11:14)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\index.js:9:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)
+    at internal/main/run_main_module.js:17:11
+2020-01-13T16:54:57.364Z [CustomLogger] error: uncaughtException: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at new MongooseError (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\mongoose\lib\error\mongooseError.js:10:11)
+    at NativeConnection.Connection.openUri (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\mongoose\lib\connection.js:543:11)
+    at Mongoose.connect (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\mongoose\lib\index.js:332:15)
+    at module.exports (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\startup\db.js:11:14)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\index.js:9:24)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)
+    at internal/main/run_main_module.js:17:11
+2020-01-13T16:57:03.416Z [CustomLogger] error: uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (net.js:1301:14)
+    at listenInCluster (net.js:1349:12)
+    at Server.listen (net.js:1437:7)
+    at Function.listen (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\express\lib\application.js:618:24)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\test.js:20:5)
+    at Runtime._execModule (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\jest-runtime\build\index.js:867:68)
+    at Runtime._loadModule (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\jest-runtime\build\index.js:577:12)
+    at Runtime.requireModule (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\jest-runtime\build\index.js:433:10)
+    at C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\jest-jasmine2\build\index.js:202:13
+    at Generator.next (<anonymous>)
+2020-01-13T16:58:54.906Z [CustomLogger] error: uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (net.js:1301:14)
+    at listenInCluster (net.js:1349:12)
+    at Server.listen (net.js:1437:7)
+    at Function.listen (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\express\lib\application.js:618:24)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\test.js:20:5)
+    at Runtime._execModule (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\jest-runtime\build\index.js:867:68)
+    at Runtime._loadModule (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\jest-runtime\build\index.js:577:12)
+    at Runtime.requireModule (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\jest-runtime\build\index.js:433:10)
+    at C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\jest-jasmine2\build\index.js:202:13
+    at Generator.next (<anonymous>)
+2020-01-13T18:03:36.875Z [CustomLogger] error: uncaughtException: Invalid value for schema path `genre.type`, got value "undefined"
+TypeError: Invalid value for schema path `genre.type`, got value "undefined"
+    at Schema.add (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\mongoose\lib\schema.js:468:13)
+    at Schema.add (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\mongoose\lib\schema.js:502:12)
+    at new Schema (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\node_modules\mongoose\lib\schema.js:130:10)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\models\movie.js:5:39)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\routes\movies.js:1:34)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-01-13T18:57:57.308Z [CustomLogger] error: uncaughtException: Unexpected token '.'
+C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\middleware\validateObjectId.js:4
+    if (!mongoose.Types..isVaild(req.params.id)) {
+                        ^
+
+SyntaxError: Unexpected token '.'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\routes\genres.js:1:26)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-01-13T18:57:58.809Z [CustomLogger] error: uncaughtException: Unexpected token '.'
+C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\middleware\validateObjectId.js:5
+        .isVaild(req.params.id)) {
+        ^
+
+SyntaxError: Unexpected token '.'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\routes\genres.js:1:26)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-01-13T18:58:01.972Z [CustomLogger] error: uncaughtException: Unexpected token '.'
+C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\middleware\validateObjectId.js:5
+        .isVaild(req.params.id)) {
+        ^
+
+SyntaxError: Unexpected token '.'
+    at Module._compile (internal/modules/cjs/loader.js:895:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Module.require (internal/modules/cjs/loader.js:852:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (C:\Users\user\Desktop\nodejs_fundamentals\Node.js_Fundamentals\Practice\routes\genres.js:1:26)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)

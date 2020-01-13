@@ -3,27 +3,27 @@
         "days": true,
         "amount": 1
     },
-    "auditLog": "C:\\Users\\user\\Desktop\\nodejs_fundamentals\\Node.js_Fundamentals\\Practice\\logs\\.1ce6390e0137f74c63efc7c5e917726053dbbc6d-audit.json",
+    "auditLog": "C:\\Users\\user\\Desktop\\nodejs_fundamentals\\Node.js_Fundamentals\\Practice\\logs\\.47aa6b8830dd22bf60b14cc11d626e1618595548-audit.json",
     "files": [
         {
-            "date": 1578934136025,
+            "date": 1578934520973,
             "name": "C:\\Users\\user\\Desktop\\nodejs_fundamentals\\Node.js_Fundamentals\\Practice\\logs\\testLog.log.2020-01-14-01",
-            "hash": "ec2ac184917d3732b57c07dfd4cd2830"
+            "hash": "0138daaad43faf3a05f3645ec73b89e9"
         },
         {
-            "date": 1578938342445,
+            "date": 1578935386110,
             "name": "C:\\Users\\user\\Desktop\\nodejs_fundamentals\\Node.js_Fundamentals\\Practice\\logs\\testLog.log.2020-01-14-02",
-            "hash": "b5ea7fa73935541a0d683ab94f70c85e"
+            "hash": "3141bffe295cb90c0bfcfb67d0220efc"
         },
         {
-            "date": 1578938459700,
+            "date": 1578938736198,
             "name": "C:\\Users\\user\\Desktop\\nodejs_fundamentals\\Node.js_Fundamentals\\Practice\\logs\\testLog.log.2020-01-14-03",
-            "hash": "1a5cdfe16cfaed28eaca1030f84a0df1"
+            "hash": "24ff7ffcd5f4430938848485c5529d9d"
         },
         {
-            "date": 1578942005621,
+            "date": 1578942143846,
             "name": "C:\\Users\\user\\Desktop\\nodejs_fundamentals\\Node.js_Fundamentals\\Practice\\logs\\testLog.log.2020-01-14-04",
-            "hash": "150dfa3a6cf4c514085f9847ff0c6966"
+            "hash": "f4ef9971ee25ad0380a3d158bb96bc33"
         }
     ]
 }

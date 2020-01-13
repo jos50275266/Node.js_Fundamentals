@@ -1,4 +1,3 @@
-const winston = require('winston');
 const { logger } = require('../utils/logger');
 require('express-async-errors');
 
