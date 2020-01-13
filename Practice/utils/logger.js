@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const { createLogger, format, transports } = require('winston');
+const { createLogger, format, transports, exceptions } = require('winston');
 const { combine, timestamp, label, printf } = format;
 const moment = require('moment');
 require('winston-daily-rotate-file'); // 당일 log 확인시 사용에 용이
@@ -58,10 +58,19 @@ const logger = createLogger({
     transports: [infoTransport, errorTransport, consoleTransport, transport]
 })
 
+const handleException = new transports.File({
+    filename: path.join(__dirname, '../logs/exceptionLog.log'),
+    handleExceptions: true
+})
+
+logger.exceptions.handle(handleException);
+
 const stream = {
     write: message => {
         logger.info(message)
     }
 }
+
+
 
 module.exports = { logger, stream }
