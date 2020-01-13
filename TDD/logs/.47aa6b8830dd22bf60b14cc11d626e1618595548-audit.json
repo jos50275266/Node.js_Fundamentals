@@ -1,0 +1,29 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 1
+    },
+    "auditLog": "C:\\Users\\user\\Desktop\\nodejs_fundamentals\\Node.js_Fundamentals\\Practice\\logs\\.47aa6b8830dd22bf60b14cc11d626e1618595548-audit.json",
+    "files": [
+        {
+            "date": 1578934520973,
+            "name": "C:\\Users\\user\\Desktop\\nodejs_fundamentals\\Node.js_Fundamentals\\Practice\\logs\\testLog.log.2020-01-14-01",
+            "hash": "0138daaad43faf3a05f3645ec73b89e9"
+        },
+        {
+            "date": 1578935386110,
+            "name": "C:\\Users\\user\\Desktop\\nodejs_fundamentals\\Node.js_Fundamentals\\Practice\\logs\\testLog.log.2020-01-14-02",
+            "hash": "3141bffe295cb90c0bfcfb67d0220efc"
+        },
+        {
+            "date": 1578938736198,
+            "name": "C:\\Users\\user\\Desktop\\nodejs_fundamentals\\Node.js_Fundamentals\\Practice\\logs\\testLog.log.2020-01-14-03",
+            "hash": "24ff7ffcd5f4430938848485c5529d9d"
+        },
+        {
+            "date": 1578942143846,
+            "name": "C:\\Users\\user\\Desktop\\nodejs_fundamentals\\Node.js_Fundamentals\\Practice\\logs\\testLog.log.2020-01-14-04",
+            "hash": "f4ef9971ee25ad0380a3d158bb96bc33"
+        }
+    ]
+}

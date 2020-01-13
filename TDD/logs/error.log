@@ -1,0 +1,107 @@
+2020-01-13T16:55:21.038Z [CustomLogger] error: This is Error...
+2020-01-13T16:55:21.041Z [CustomLogger] error: Hello World!
+2020-01-13T16:55:24.360Z [CustomLogger] error: This is Error...
+2020-01-13T16:55:24.361Z [CustomLogger] error: Hello World!
+2020-01-13T16:56:18.100Z [CustomLogger] error: This is Error...
+2020-01-13T16:56:18.103Z [CustomLogger] error: Hello World!
+2020-01-13T16:57:03.363Z [CustomLogger] error: This is Error...
+2020-01-13T16:57:03.365Z [CustomLogger] error: Hello World!
+2020-01-13T16:57:31.703Z [CustomLogger] error: This is Error...
+2020-01-13T16:57:31.707Z [CustomLogger] error: Hello World!
+2020-01-13T16:58:54.839Z [CustomLogger] error: This is Error...
+2020-01-13T16:58:54.844Z [CustomLogger] error: Hello World!
+2020-01-13T17:09:46.131Z [CustomLogger] error: This is Error...
+2020-01-13T17:09:46.136Z [CustomLogger] error: Hello World!
+2020-01-13T17:11:04.277Z [CustomLogger] error: validateGenre is not definedvalidateGenre is not defined
+2020-01-13T17:12:19.705Z [CustomLogger] error: validateGenre is not definedvalidateGenre is not defined
+2020-01-13T17:13:16.046Z [CustomLogger] error: validateGenre is not definedvalidateGenre is not defined
+2020-01-13T17:13:19.756Z [CustomLogger] error: validateGenre is not definedvalidateGenre is not defined
+2020-01-13T17:13:24.225Z [CustomLogger] error: validateGenre is not definedvalidateGenre is not defined
+2020-01-13T17:13:45.766Z [CustomLogger] error: validateGenre is not definedvalidateGenre is not defined
+2020-01-13T17:14:02.792Z [CustomLogger] error: validateGenre is not definedvalidateGenre is not defined
+2020-01-13T17:14:32.507Z [CustomLogger] error: validateGenre is not definedvalidateGenre is not defined
+2020-01-13T17:14:55.302Z [CustomLogger] error: validateGenre is not definedvalidateGenre is not defined
+2020-01-13T17:15:31.376Z [CustomLogger] error: validateGenre is not definedvalidateGenre is not defined
+2020-01-13T17:16:53.481Z [CustomLogger] error: validateGenre is not definedvalidateGenre is not defined
+2020-01-13T17:16:58.995Z [CustomLogger] error: validateGenre is not definedvalidateGenre is not defined
+2020-01-13T17:19:54.753Z [CustomLogger] error: validateGenre is not definedvalidateGenre is not defined
+2020-01-13T17:20:35.023Z [CustomLogger] error: validateGenre is not definedvalidateGenre is not defined
+2020-01-13T17:20:42.991Z [CustomLogger] error: validateGenre is not definedvalidateGenre is not defined
+2020-01-13T17:20:51.003Z [CustomLogger] error: validateGenre is not definedvalidateGenre is not defined
+2020-01-13T17:20:56.656Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:21:15.382Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:22:01.709Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:22:15.657Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:23:55.914Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:25:12.352Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:25:16.982Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:25:50.159Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:28:59.826Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:31:27.318Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:31:44.518Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:31:51.179Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:31:55.546Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:32:09.357Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:34:07.084Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:34:58.592Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:35:16.180Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:35:30.680Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:36:18.130Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:36:31.032Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:36:38.115Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:38:38.682Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:38:56.356Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:39:20.052Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:39:26.759Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:39:36.034Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:40:30.549Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:40:45.598Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:41:06.109Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:41:42.927Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:41:50.372Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:42:22.985Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:42:36.575Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:42:51.936Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:43:26.658Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:43:52.144Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:44:07.531Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:44:26.496Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:45:26.556Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:45:44.290Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:45:54.900Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:46:06.857Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:46:14.059Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:46:22.577Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:46:39.346Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:46:55.490Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:47:01.374Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:47:09.363Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:47:31.426Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:50:24.816Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:50:54.241Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:51:12.825Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:54:55.862Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:55:16.962Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:58:32.972Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T17:58:46.738Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T18:00:59.698Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T18:04:38.810Z [CustomLogger] error: Joi.validate is not a functionJoi.validate is not a function
+2020-01-13T18:47:18.942Z [CustomLogger] error: mongoose.Types.ObjectId.isVaild is not a functionmongoose.Types.ObjectId.isVaild is not a function
+2020-01-13T18:47:38.194Z [CustomLogger] error: mongoose.Types.ObjectId.isVaild is not a functionmongoose.Types.ObjectId.isVaild is not a function
+2020-01-13T18:47:43.367Z [CustomLogger] error: mongoose.Types.ObjectId.isVaild is not a functionmongoose.Types.ObjectId.isVaild is not a function
+2020-01-13T18:47:51.002Z [CustomLogger] error: mongoose.Types.ObjectId.isVaild is not a functionmongoose.Types.ObjectId.isVaild is not a function
+2020-01-13T18:49:34.964Z [CustomLogger] error: mongoose.Types.ObjectId.isVaild is not a functionmongoose.Types.ObjectId.isVaild is not a function
+2020-01-13T18:50:55.471Z [CustomLogger] error: Could not connect to MongoDB...
+2020-01-13T18:51:16.415Z [CustomLogger] error: Could not connect to MongoDB...
+2020-01-13T18:51:59.153Z [CustomLogger] error: Could not connect to MongoDB...
+2020-01-13T18:52:09.877Z [CustomLogger] error: Could not connect to MongoDB...
+2020-01-13T18:52:37.276Z [CustomLogger] error: Could not connect to MongoDB...
+2020-01-13T18:53:00.368Z [CustomLogger] error: Could not connect to MongoDB...
+2020-01-13T18:53:36.189Z [CustomLogger] error: Could not connect to MongoDB...
+2020-01-13T18:54:01.291Z [CustomLogger] error: mongoose.Types.ObjectId.isVaild is not a functionmongoose.Types.ObjectId.isVaild is not a function
+2020-01-13T18:54:19.637Z [CustomLogger] error: mongoose.Types.ObjectId.isVaild is not a functionmongoose.Types.ObjectId.isVaild is not a function
+2020-01-13T18:57:02.166Z [CustomLogger] error: mongoose.Types.ObjectId.isVaild is not a functionmongoose.Types.ObjectId.isVaild is not a function
+2020-01-13T18:58:12.790Z [CustomLogger] error: mongoose.Types.isVaild is not a functionmongoose.Types.isVaild is not a function
+2020-01-13T18:58:43.778Z [CustomLogger] error: mongoose.Types.ObjectId.isVaild is not a functionmongoose.Types.ObjectId.isVaild is not a function
+2020-01-13T19:00:05.618Z [CustomLogger] error: mongoose.Types.ObjectId.isVaild is not a functionmongoose.Types.ObjectId.isVaild is not a function
+2020-01-13T19:00:06.706Z [CustomLogger] error: mongoose.Types.ObjectId.isVaild is not a functionmongoose.Types.ObjectId.isVaild is not a function
