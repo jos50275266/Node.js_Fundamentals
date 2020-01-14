@@ -1,0 +1,14 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 1
+    },
+    "auditLog": "C:\\Users\\user\\Desktop\\nodejs_fundamentals\\Node.js_Fundamentals\\TDD\\logs\\.8dae02a17f4f7fb181067bc613a8254b6f680570-audit.json",
+    "files": [
+        {
+            "date": 1578949829447,
+            "name": "C:\\Users\\user\\Desktop\\nodejs_fundamentals\\Node.js_Fundamentals\\TDD\\logs\\testLog.log.2020-01-14-06",
+            "hash": "0b1f20cfbf89c6ea8bcc2ab603317975"
+        }
+    ]
+}
