@@ -71,30 +71,37 @@ describe('/api/returns', () => {
         expect(result).not.toBeNull();
     });
 
-    it('should return 401 if client is not logged in!', async () => {
+    it('should return 401 (Unauthorized) if client is not logged in!', async () => {
         token = '';
         const res = await exec();
         expect(res.status).toBe(401);
     });
 
-    it('should return 400 if customerId is not provided!', async () => {
+    it('should return 400 (Bad Request) if customerId is not provided!', async () => {
         customerId = '';
         // delete payload.customerId;
         const res = await exec();
         expect(res.status).toBe(400);
     });
 
-    it('should return 400 if movidId is not provided!', async () => {
+    it('should return 400 (Bad Request) if movidId is not provided!', async () => {
         movieId = '';
 
         const res = await exec();
         expect(res.status).toBe(400);
     });
 
-    it('should return 404 if no rental found for this customer/movie', async () => {
+    it('should return 404 (Not Found) if no rental found for this customer/movie', async () => {
         await Rental.remove({});
         const res = await exec();
         expect(res.status).toBe(404);
     });
 
+    it('should return 400 (Bad Request) if rental already processed', async () => {
+        rental.dateReturned = new Date();
+        await rental.save;
+
+        const res = await exec();
+        expect(res.status).toBe(400)
+    })
 });
