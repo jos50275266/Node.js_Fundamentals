@@ -1,3 +1,4 @@
+const validate = require('../middleware/validate')
 const auth = require('../middleware/auth');
 const { Rental, validateRental } = require('../models/rental');
 const { Movie } = require('../models/movie');
@@ -16,9 +17,9 @@ router.get('/', async (req, res) => {
 
 // dateReturn and rentalFee properties 들을 client가 설정하기를 원하지 않는다 우리는,
 // 그렇지않다면 client는 rentalFee를 0으로 하는 등의 행위를 할 것 이다.
-router.post('/', async (req, res) => {
-    const { error } = await validateRental(req.body);
-    if (error) return res.status(400).send(error.details[0].message);
+router.post('/', validate(validateRental), async (req, res) => {
+    // const { error } = await validateRental(req.body);
+    // if (error) return res.status(400).send(error.details[0].message);
 
     const customer = await Customer.findById(req.body.customerId);
     if (!customer) return res.status(400).send('Invalid customer.');

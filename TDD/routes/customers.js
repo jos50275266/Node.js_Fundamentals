@@ -1,3 +1,4 @@
+const validate = require('../middleware/validate');
 const { Customer, validateCustomer } = require('../models/customer');
 const express = require('express');
 const router = express.Router();
@@ -8,9 +9,9 @@ router.get('/', async (req, res) => {
 });
 
 // 이 부분은 영화관의 직원 혹은 그에 준하는 관계자가 post 하도록 isGold 때문에 
-router.post('/', async (req, res) => {
-    const { error } = await validateCustomer(req.body);
-    if (error) return res.status(400).send(error.details[0].message);
+router.post('/', validate(validateCustomer), async (req, res) => {
+    // const { error } = await validateCustomer(req.body);
+    // if (error) return res.status(400).send(error.details[0].message);
 
     let customer = new Customer({
         name: req.body.name,
@@ -23,9 +24,9 @@ router.post('/', async (req, res) => {
 });
 
 // 이 부분은 영화관의 직원 혹은 그에 준하는 관계자가 post 하도록 isGold 때문에 
-router.put('/:id', async (req, res) => {
-    const { error } = await validateCustomer(req.body);
-    if (error) return res.status(400).send(error.details[0].message);
+router.put('/:id', validate(validateCustomer), async (req, res) => {
+    // const { error } = await validateCustomer(req.body);
+    // if (error) return res.status(400).send(error.details[0].message);
 
     const customer = await Customer.findByIdAndUpdate(req.params.id,
         {
