@@ -92,6 +92,9 @@ describe('/api/returns', () => {
     });
 
     it('should return 404 if no rental found for this customer/movie', async () => {
-        
-    })
+        await Rental.remove({});
+        const res = await exec();
+        expect(res.status).toBe(404);
+    });
+
 });
