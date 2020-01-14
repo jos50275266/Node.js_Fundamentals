@@ -62,6 +62,9 @@ router.get('/:id', async (req, res) => {
     if (!rental) return res.status(404).send('The rental with the given ID was not found.');
 
     res.send(rental);
+
+    // 1. Failing Test: Expected value to be: 400, Received: 401
+    // 2. Solve this Failing code
 });
 
 module.exports = router; 
