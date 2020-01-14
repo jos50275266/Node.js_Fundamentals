@@ -145,7 +145,7 @@ describe('/api/returns', () => {
         const res = await exec();
         const rentalInDb = await Rental.findById(rental._id);
         expect(rentalInDb.rentalFee).toBe(14);
-    })
+    });
 
     it('should increase the movie stock if input is valid ', async () => {
         const res = await exec();
@@ -154,5 +154,20 @@ describe('/api/returns', () => {
         // 이제 조금 비동기의 느낌을 알 것 같다.
         const movieInDb = await Movie.findById(movieId);
         expect(movieInDb.numberInStock).toBe(movie.numberInStock + 1);
+    });
+
+    it('should return the rental if input is valid', async () => {
+        const res = await exec();
+
+        const rentalInDb = await Rental.findById(rental._id);
+        expect(res.body).toHaveProperty('dateOut');
+        expect(res.body).toHaveProperty('dateReturned');
+        expect(res.body).toHaveProperty('rentalFee');
+        expect(res.body).toHaveProperty('customer');
+        expect(res.body).toHaveProperty('movie');
+
+        // 위 아래 동일
+        expect(Object.keys(res.body)).toEqual(
+            expect.arrayContaining(['dateOut', 'dateReturned', 'rentalFee', 'customer', 'movie']))
     })
 });
