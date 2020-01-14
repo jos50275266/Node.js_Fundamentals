@@ -1,3 +1,4 @@
+const auth = require('../middleware/auth');
 const { Rental, validateRental } = require('../models/rental');
 const { Movie } = require('../models/movie');
 const { Customer } = require('../models/customer');

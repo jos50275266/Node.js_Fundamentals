@@ -1,3 +1,5 @@
+const request = require('supertest');
+const { User } = require('../../models/user');
 const { Rental } = require('../../models/rental')
 const mongoose = require('mongoose');
 
@@ -24,6 +26,7 @@ describe('/api/returns', () => {
     let customerId;
     let movieId;
     let rental;
+    let token;
 
     beforeEach(async () => {
         server = require('../../index');
@@ -36,7 +39,7 @@ describe('/api/returns', () => {
             customer: {
                 _id: customerId,
                 name: '12345',
-                phone: '12455'
+                phone: '12345'
             },
             movie: {
                 _id: movieId,
@@ -52,9 +55,18 @@ describe('/api/returns', () => {
         await Rental.remove({})
     });
 
+
     // One simple Test
     it('should work!', async () => {
-        await Rental.findById(rental._id);
-        expect(Rental).not.toBeNull();
+        const result = await Rental.findById(rental._id);
+        expect(result).not.toBeNull();
     });
-})
+
+    it('should return 401 if client is not logged in!', async () => {
+        const res = await request(server)
+            .post('/api/returns')
+            .send({ customerId, movieId });
+
+        expect(res.status).toBe(401);
+    })
+});
