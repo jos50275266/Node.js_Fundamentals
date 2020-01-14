@@ -1,3 +1,4 @@
+const moment = require('moment');
 const request = require('supertest');
 const { User } = require('../../models/user');
 const { Rental } = require('../../models/rental')
@@ -15,7 +16,7 @@ const mongoose = require('mongoose');
 
 // Positive Cases
 // Test Case #1. Set the return  date
-// Test Case #2. Calculate the rental fee
+// Test Case #2. Calculate the rental fee (numberOfDays * movie.dailyRentalRate)
 // Test Case #3. Increase the stock
 // Test Case #4. Return the rental
 
@@ -61,7 +62,7 @@ describe('/api/returns', () => {
 
     afterEach(async () => {
         await server.close();
-        await Rental.remove({})
+        await Rental.deleteMany({})
     });
 
 
@@ -112,13 +113,25 @@ describe('/api/returns', () => {
 
     it('should set the returnDate if input is valid', async () => {
         const res = await exec();
-
-
+        // 위 res = await exec()가 실행되고 DB에 변화가 발생해도
+        // 아래 rentalInDB는 그 변화를 인식하지못한다. 그러므로, 우리는 아래와 같이
+        // reload의 과정이 필요하다.
         const rentalInDB = await Rental.findById(rental._id)
+        // 시간차가 있다는 것은 변화가 DB에 적용됬음을 의미하고 아래 시간은 WORST CASE
+        // 즉 변화가 적용되었다면 당연히 시간차가 있어야하기 때문에.
         const diff = new Date() - rentalInDB.dateReturned;
         expect(diff).toBeLessThan(10 * 1000); // Worst Case
-        // expect(rentalInDB.dateReturned).toBeDefined();
+        // expect(rentalInDB.dateReturned).toBeDefined(); // general way
     });
 
+    it('should set the rentalFee if input is valid', async () => {
+        // dateOut (current time)
 
+        rental.dateOut = moment().add(-7, 'days').toDate(); // 7 days ago
+        await rental.save();
+
+        const res = await exec();
+        const rentalInDb = await Rental.findById(rental._id);
+        expect(rentalInDb.rentalFee).toBe(14);
+    })
 });
