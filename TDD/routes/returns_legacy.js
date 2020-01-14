@@ -8,6 +8,16 @@ const express = require('express');
 const router = express.Router();
 
 router.post('/', [auth, validate(validateReturn)], async (req, res) => {
+    // if (!req.body.customerId) return res.status(400).send('customerId not provided');
+    // if (!req.body.movieId) return res.status(400).send('movieId not provided');
+
+    // const { error } = validateReturn(req.body);
+    // if (error) return res.status(400).send(error.details[0].message);
+
+    // const rental = await Rental.findOne({
+    //     'customer._id': req.body.customerId,
+    //     'movie._id': req.body.movieId
+    // });
 
     const rental = await Rental.lookup(req.body.customerId, req.body.movieId);
 
@@ -16,15 +26,9 @@ router.post('/', [auth, validate(validateReturn)], async (req, res) => {
     if (rental.dateReturned) return res.status(400).send('Rental already processed...');
 
     // rental.dateReturned = 1; toBeDefined() test를 통과하는지 간략하게 확인하려고
-
-
-
-    // Information Expert Principle
-    // Encapsulate this logic inside rental object itself.
-    // rental.dateReturned = new Date();
-    // const rentalDays = moment().diff(rental.dateOut, 'days')
-    // rental.rentalFee = rentalDays * rental.movie.dailyRentalRate;
-    rental.return();
+    rental.dateReturned = new Date();
+    const rentalDays = moment().diff(rental.dateOut, 'days')
+    rental.rentalFee = rentalDays * rental.movie.dailyRentalRate;
     await rental.save();
 
     // Let's use update first approach
