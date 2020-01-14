@@ -1,5 +1,6 @@
 const moment = require('moment');
 const request = require('supertest');
+const { Movie } = require('../../models/movie');
 const { User } = require('../../models/user');
 const { Rental } = require('../../models/rental')
 const mongoose = require('mongoose');
@@ -27,6 +28,7 @@ describe('/api/returns', () => {
     let customerId;
     let movieId;
     let rental;
+    let movie;
     let token;
 
     const exec = async () => {
@@ -43,6 +45,16 @@ describe('/api/returns', () => {
         customerId = mongoose.Types.ObjectId();
         movieId = mongoose.Types.ObjectId();
         token = new User().generateAuthToken();
+
+        movie = new Movie({
+            _id: movieId,
+            title: '12345',
+            dailyRentalRate: 2,
+            genre: { name: '12345' },
+            numberInStock: 10
+        });
+
+        await movie.save();
 
         // DateOut will be automatically set by mongoose.
         rental = new Rental({
@@ -62,7 +74,8 @@ describe('/api/returns', () => {
 
     afterEach(async () => {
         await server.close();
-        await Rental.deleteMany({})
+        await Rental.deleteMany({});
+        await Movie.deleteMany({});
     });
 
 
@@ -126,12 +139,20 @@ describe('/api/returns', () => {
 
     it('should set the rentalFee if input is valid', async () => {
         // dateOut (current time)
-
         rental.dateOut = moment().add(-7, 'days').toDate(); // 7 days ago
         await rental.save();
 
         const res = await exec();
         const rentalInDb = await Rental.findById(rental._id);
         expect(rentalInDb.rentalFee).toBe(14);
+    })
+
+    it('should increase the movie stock if input is valid ', async () => {
+        const res = await exec();
+        // const res = await exec() 가 실행되면 결국에 returns.js 전체가 한 번 실행되고 난 후기
+        // 때문에 +1 이 반영된다 이래서 비동기 방식을 이용한다.
+        // 이제 조금 비동기의 느낌을 알 것 같다.
+        const movieInDb = await Movie.findById(movieId);
+        expect(movieInDb.numberInStock).toBe(movie.numberInStock + 1);
     })
 });
